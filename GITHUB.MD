@@ -21,11 +21,11 @@ Host github.com-t
 
 git remote add origin git@github.com-t:Tanuja9346/concepts.git.
 
-# here we saw two things i.e already existing folder how to converted it as git using git initv command
+# here we saw two things i.e already existing folder how to converted it as git using "git init" command
  and create a repo in github server
  connect local and central repo through git remote add orgin < make sure connect through ssh>
   this is more flexible bcz no need to give username and pswrd again and again so u can easily push and pull.
-  
+
 
 
 
