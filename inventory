@@ -6,3 +6,6 @@ catalogue.joindevops.online
 
 [web]
 web.joindevops.online
+
+[redis]
+redis.joindevops.online
