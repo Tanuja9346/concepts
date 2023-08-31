@@ -58,13 +58,16 @@
     ansible.builtin.systemd:
       daemon_reload: true
 
+  - name: Install MySQL client
+    ansible.builtin.yum:
+      name: mysql
+      state: installed
+
+  - name: load mysql schema
+    ansible.builtin.command: mysql -h mysql.joindevops.online -uroot -pRoboShop@1 < /app/schema/shipping.sql 
+  
   - name: restart shipping
     ansible.builtin.service:
       name: shipping
       state: restarted
       enabled: true
-
-  - name: Install MySQL client
-    ansible.builtin.yum:
-      name: mysql
-      state: installed
