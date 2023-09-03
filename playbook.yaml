@@ -1,7 +1,7 @@
 - name: ping the node  ## playbook is list of plays, always it should starts with -
   host: mongodb
-## this is list of task/moduke/collections
-task:
-  -name: pinging the server
-#this is server
-  ansible.builtin.ping:
+ ## this is list of task/moduke/collections
+  task:
+   - name: pinging the server
+#this is map
+     ansible.builtin.ping:
