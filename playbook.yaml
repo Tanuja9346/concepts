@@ -2,6 +2,6 @@
   host: mongodb
  ## this is list of task/moduke/collections
   task:
-   - name: pinging the server
+ - name: pinging the server
 #this is map
      ansible.builtin.ping:
