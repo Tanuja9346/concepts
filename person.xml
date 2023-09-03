@@ -1,0 +1,17 @@
+<person>
+     <NAME>ch.tanuja</NAME>
+     <DOB>31-08-1996</DOB>
+     <COUNTRY>india</COUNTRY>
+     <CITY>vizag</CITY>
+ <address>
+     <permaddress>
+          <COUNTRY>india</COUNTRY>
+          <CITY>vizag</CITY>
+     </premaddress>
+     <currentaddress>
+               <COUNTRY>singapore</COUNTRY>
+               <CITY>tampanies</CITY>
+     </currentaddress>
+</address>
+
+</person>

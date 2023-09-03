@@ -1,0 +1,31 @@
+{  
+    "name": "tanuja",
+     "dob":  "1996",
+    //  this is address map, inside everything is keyvalue pair
+     "address": {
+        "city":  "hyd",
+     "country": "india"
+     }    
+
+}
+
+{  
+    "name": "Tanuja",
+     "dob":  "1996",
+    //  this is list of address , inside everything is keyvalue pair
+     "address": [
+        {
+            "city":  "hyd",
+            "country": "india",
+            "type":   "perm"
+        }
+        {
+        "city":  "hyd",
+         "country": "india",
+         "type": "current"
+        }
+     ]    
+
+}
+
+
