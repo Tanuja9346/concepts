@@ -1,5 +1,5 @@
 - name: varaibles from inventory
-  host: mongodb
+  hosts: mongodb
   tasks:
   - name: print mongodb username
     ansible.builtin.debug:
