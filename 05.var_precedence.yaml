@@ -2,12 +2,12 @@
   hosts: mongodb
   vars:
     NAME: Sivakumar-play
-    vars_files:
-    - varieables.yaml
-    vars_prompt:
-    - name: NAME
-      prompt: please enter trainer name
-      private: false
+  vars_files:
+  - varieables.yaml
+  vars_prompt:
+  - name: NAME
+    prompt: please enter Trainer name
+    private: false
   tasks:
   - name: variable at task level
     ansible.builtin.debug:
