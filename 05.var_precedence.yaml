@@ -1,7 +1,7 @@
 - name: testing variables precedence
   hosts: mongodb
-  vars:
-    NAME: Sivakumar-play
+  #vars:
+   # NAME: Sivakumar-play
  # vars_files:
   #- varieables.yaml
  # vars_prompt:
@@ -17,3 +17,5 @@
 #task level
 #var_files
 #prompt
+#play
+
