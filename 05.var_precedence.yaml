@@ -1,0 +1,17 @@
+- name: testing variables precedence
+  hosts: mongodb
+  vars:
+    NAME: Sivakumar-play
+    vars_prompt:
+    - name: NAME
+      prompt: please enter trainer name
+      private: false
+    vars_files:
+    - varieables.yaml
+  tasks:
+  - name: variable at task level
+    vars:
+      NAME: Sivakumar-task
+    ansible.builtin.debug:
+      msg: "Trainer name is {{NAME}}"
+

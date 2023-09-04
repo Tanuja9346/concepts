@@ -4,6 +4,7 @@ roboshop-us-dev-db-mongodb-01.joindevops.xyz
 [mongodb:vars]
 MONGO_USERNAME=mongoadmin
 MONGO_DB=categories
+NAME=Sivakumar-inventory
 
 [app]
 roboshop-in-prod-app-cart-01.joindevops.xyz
