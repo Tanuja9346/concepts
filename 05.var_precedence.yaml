@@ -10,8 +10,9 @@
     - varieables.yaml
   tasks:
   - name: variable at task level
-    vars:
-      NAME: Sivakumar-task
     ansible.builtin.debug:
       msg: "Trainer name is {{NAME}}"
 
+# first preference is command line variable.
+#task level
+#
