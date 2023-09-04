@@ -1,0 +1,10 @@
+- name: variables from files
+  hosts: local host # manaing the ansible  itself
+  var:
+    01.variables.yaml
+  tasks:
+  - name: "print the variables"
+    ansible.builtin.debug:
+     msg: "we are learning {{course}}", traineris {{trainer}}, duration is {{duration}}""
+
+    
