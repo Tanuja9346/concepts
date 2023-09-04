@@ -2,8 +2,8 @@
   hosts: mongodb
   vars:
     NAME: Sivakumar-play
-  vars_files:
-  - varieables.yaml
+ # vars_files:
+  #- varieables.yaml
   vars_prompt:
   - name: NAME
     prompt: please enter Trainer name
@@ -15,4 +15,5 @@
 
 # first preference is command line variable.
 #task level
+#var_files
 #
