@@ -10,5 +10,5 @@
     ignore_errors: true
   - name: print this output
     ansible.builtin.debug: 
-      msg:"output is:{{output}}"
+      msg: "output is:{{output}}"
 
