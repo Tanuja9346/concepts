@@ -1,0 +1,34 @@
+name: Tanuja
+dob: 31-08-1996
+## this is map
+address: 
+ city: hyb
+ country: india
+ dno: 1-3-23
+ street: naidu nagar
+ # this is list of address
+ addresses:
+ - type: perm
+   city: guntur
+   country: india
+- type: current
+  city: california
+  country: us
+#this is another person
+name: jay
+dob: 31-08-1998
+## this is map
+address: 
+ city: hyb
+ country: india
+ dno: 1-3-23
+ street: naidu nagar
+ # this is list of address
+ addresses:
+ - type: perm
+   city: guntur
+   country: india
+- type: current
+  city: california
+  country: us
+
