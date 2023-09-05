@@ -20,3 +20,7 @@
       name: robhoshop
     when: output.rc != 0          ##when condition in ansible.
 
+    #it created the user.
+    # to check that id roboshop command apply see output.
+    
+
