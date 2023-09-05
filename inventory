@@ -1,6 +1,5 @@
 [mongodb]
-roboshop-us-dev-app-mongodb-01.joindevops.xyz
-
+172.31.36.171
 [mongodb:vars]
 MONGO_USERNAME=mongoadmin
 MONGO_DB=categories
