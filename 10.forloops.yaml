@@ -8,4 +8,6 @@
       state: started
     loop:
     - nginx
-    - postmap
+    - postfix
+    - cyrus-sasl-plain
+    - mailx                 #install packages through loops
