@@ -1,5 +1,5 @@
 - name: install packages
-  hosts: mongodb
+  hosts: localhost
   become: yes
   tasks:
   - name: install packages
