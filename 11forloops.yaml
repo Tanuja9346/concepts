@@ -10,4 +10,4 @@
     - nginx
     - postfix
     - cyrus-sasl-plain
-    - mailx                 #install packages through loops
+    - mailx               #install packages through loops
