@@ -1,0 +1,15 @@
+- name: install packages
+  hosts: mongodb
+  become: yes
+  tasks:
+  - name: install packages
+    ansible.builtin.yum:
+      name: "{{item.name}}"
+      state: "{{item.state}}"       #item.name check nginx and item.state check the state of nginix below maplist
+                                                  
+    #list of mapping
+    loop:
+    - {name: 'nginx', state: 'absent'}
+    - {name: 'postfix', state: 'installed'}
+    - {name: 'cyrus-sasl-plain', state: 'absent'}
+    - {name: 'mailx', state: 'installed'}               
