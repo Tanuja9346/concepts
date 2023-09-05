@@ -3,8 +3,11 @@
   tasks:
   - name: check username exit or not
   # when u want to run linux  commands directly, i.e in the case of ansible module not available.
+  #when user doesnt exit ansible treating it as failure and comeout bydefault
+  #Ignore_errors: true
     ansible.builtin.command: id robhoshop
-    register: output #output is variable
+    register: output  #output is variable
+    ignore_errors: true
   - name: print this output
     ansible.builtin.debug: 
       msg:"{{output}}"
