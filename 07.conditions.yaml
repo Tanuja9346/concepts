@@ -18,9 +18,10 @@
     become: yes   #we need sudo acesses at this level and if u give at play level it applies at every task.
     ansible.builtin.user:         #user module
       name: robhoshop
-    when: output.rc != 0          ##when condition in ansible.
+    when: output.rc != 0          ##when condition in ansible: if the expression is true then only it run the ansible module 
+
 
     #it created the user.
     # to check that id roboshop command apply see output.
-    
+
 
