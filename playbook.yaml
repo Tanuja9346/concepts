@@ -1,5 +1,5 @@
 - name: ping the node  ## playbook is list of plays, always it should starts with -
-  hosts: mongodb
+  hosts: app
  ## this is list of task/moduke/collections
   tasks:
   - name: pinging the server

@@ -1,2 +1,13 @@
 [mongodb]
 52.90.70.214
+
+
+[app]
+roboshop-in-prod-app-cart
+
+
+[mongodb:vars]
+MONGO_USERNAME=mongoadmin
+MONGO_DB=categories
+NAME=Sivakumar-inventory
+
