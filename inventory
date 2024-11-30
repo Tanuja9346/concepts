@@ -1,16 +1,2 @@
 [nginx]
 52.90.70.214
-
-
-[mongodb:vars]
-MONGO_USERNAME=mongoadmin
-MONGO_DB=categories
-NAME=Sivakumar-inventory
-
-[app]
-roboshop-in-prod-app-cart-01.joindevops.xyz
-roboshop-in-prod-app-cart-02.joindevops.xyz
-roboshop-in-prod-app-cart-03.joindevops.xyz
-
-[cart:vars]
-CART_NUMBER=1010343434
