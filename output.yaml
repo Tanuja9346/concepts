@@ -1,0 +1,15 @@
+- name: install packages
+  host: localhost
+  become: yes
+  task:
+  - name: install package
+    ansible.builtin.yum:
+    - name: mongodb
+    - state: install
+  - name: started packages
+    ansible.builtin.service:
+    - name: mongodb
+    - state: started
+  - name: print the packages name
+    ansible.builtin.debug:
+    msg: "{{name}}"

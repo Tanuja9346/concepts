@@ -11,3 +11,5 @@ roboshop-in-prod-app-cart-01.joindevops.xyz
 roboshop-in-prod-app-cart-02.joindevops.xyz
 roboshop-in-prod-app-cart-03.joindevops.xyz
 
+[cart:vars]
+CART_NUMBER=1010343434
