@@ -1,5 +1,6 @@
-[mongodb]
-172.31.36.171
+[nginx]
+52.90.70.214
+
 
 [mongodb:vars]
 MONGO_USERNAME=mongoadmin
