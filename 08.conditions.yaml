@@ -1,12 +1,12 @@
-# - name: simple conditions
-#   hosts: localhost
-#   vars:
-#     name: devopzs1   #DevOps
-#   tasks:
-#   - name: run if the name is devops
-#     ansible.builtin.debug:
-#       msg: "{{name}}"
-#     when: name == "DevOps"   #ansible when condition: if the expression is true then only it run the ansible module.
+- name: simple conditions
+  hosts: localhost
+  vars:
+    name: devopzs1   #DevOps
+  tasks:
+  - name: run if the name is devops
+    ansible.builtin.debug:
+      msg: "{{name}}"
+    when: name == "DevOps"   #ansible when condition: if the expression is true then only it run the ansible module.
 
 
 
@@ -25,7 +25,7 @@
 
     
 
-    - name: Create the user if it does not exist
+    - name: Create the user roboshop23
       ansible.builtin.user:
-        name: username_to_check
+        name: roboshop23
       when: user_check.rc != 0
