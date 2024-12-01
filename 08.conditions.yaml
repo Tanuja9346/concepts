@@ -23,9 +23,7 @@
       register: user_check
       ignore_errors: true
 
-    - name: Debug the user check result (optional)
-      debug:
-        msg: "{{ user_check.stdout }}"
+    
 
     - name: Create the user if it does not exist
       ansible.builtin.user:
