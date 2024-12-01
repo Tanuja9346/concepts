@@ -15,7 +15,7 @@
   hosts: mongodb
   become: yes  # Ensures tasks run with elevated privileges
   vars:
-    username_to_check: "roboshop23"  # Replace with the desired username
+    username_to_check: roboshop23  # Replace with the desired username
 
   tasks:
     - name: Check if the user exists
