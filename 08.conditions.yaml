@@ -19,7 +19,7 @@
 
   tasks:
     - name: Check if the user exists
-      ansible.builtin.shell: "getent passwd {{ username_to_check }}"
+      ansible.builtin.shell: id roboshop23
       register: user_check
       ignore_errors: true
 
