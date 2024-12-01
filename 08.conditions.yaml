@@ -27,5 +27,5 @@
 
     - name: Create the user if it does not exist
       ansible.builtin.user:
-        name: "{{ username_to_check }}"
+        name: username_to_check
       when: user_check.rc != 0
