@@ -1,9 +1,33 @@
-- name: simple conditions
-  hosts: localhost
+# - name: simple conditions
+#   hosts: localhost
+#   vars:
+#     name: devopzs1   #DevOps
+#   tasks:
+#   - name: run if the name is devops
+#     ansible.builtin.debug:
+#       msg: "{{name}}"
+#     when: name == "DevOps"   #ansible when condition: if the expression is true then only it run the ansible module.
+
+
+
+
+- name: Check and create a username dynamically
+  hosts: all
+  become: yes  # Ensures tasks run with elevated privileges
   vars:
-    name: devopzs1   #DevOps
+    username_to_check: "testuser"  # Replace with the desired username
+
   tasks:
-  - name: run if the name is devops
-    ansible.builtin.debug:
-      msg: "{{name}}"
-    when: name == "DevOps"   #ansible when condition: if the expression is true then only it run the ansible module.
+    - name: Check if the user exists
+      ansible.builtin.shell: "getent passwd {{ username_to_check }}"
+      register: user_check
+      ignore_errors: true
+
+    - name: Debug the user check result (optional)
+      debug:
+        msg: "{{ user_check.stdout }}"
+
+    - name: Create the user if it does not exist
+      ansible.builtin.user:
+        name: "{{ username_to_check }}"
+      when: user_check.rc != 0
